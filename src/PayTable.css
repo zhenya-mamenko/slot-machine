@@ -1,0 +1,10 @@
+div.pay-table {
+  width: 360px;
+  height: 235px;
+  padding: 10px 10px 10px 20px;
+  background: #ffffff;
+  float: left;
+  border: #000 3px solid;
+  border-radius: 6px;
+  margin: 5px 2px 0px 5px;
+}

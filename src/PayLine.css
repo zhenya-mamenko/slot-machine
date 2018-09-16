@@ -1,0 +1,35 @@
+.blink{
+	animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.pay-line {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.coins {
+  display: block;
+  float: right;
+  font-weight: bold;
+}
+
+img.fancy-image {
+  vertical-align: middle;
+  margin: 0 5px 0 5px;
+  width: 27px;
+  height: auto;
+}
+
+img.fancy-star {
+  vertical-align: middle;
+  margin: 0 8px 0 -5px;
+  width: 14px;
+  height: 14px;
+}

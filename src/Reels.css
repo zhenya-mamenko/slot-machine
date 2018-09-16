@@ -1,0 +1,21 @@
+div.outer-reel {
+  clear: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+div.separator {
+  height: 248px;
+  width: 10px;
+  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 25%,#000000 27%,#ffffff 28%,#ffffff 52%,#000000 54%,#ffffff 56%,#ffffff 77%,#000000 78%,#ffffff 80%,#ffffff 100%);
+}
+
+div.reels {
+  width: 508px;
+  height: 260px;
+  padding: 5px;
+  background: #ffffff;
+  float: left;
+}

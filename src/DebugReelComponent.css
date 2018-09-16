@@ -1,0 +1,10 @@
+div.debug-reel-component {
+  float: left;
+  margin-top: 10px;
+}
+
+div.debug-reel-component label {
+  width: 55px;
+  display: block;
+  float: left;
+}

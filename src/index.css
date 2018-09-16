@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body, select, input, button {
+  font-family: 'Open Sans', sans-serif;
+}
+.float-left {
+  display: block;
+  float: left;
+}
+.float-right {
+  display: block;
+  float: right;
+}
+
