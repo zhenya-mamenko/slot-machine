@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# projects's
+eslint-result.html
+eslint-fix.cmd
+.eslintrc.js
+.babelrc.js
+package-lock.json
+wdio.conf.js
+webpack.config.js
