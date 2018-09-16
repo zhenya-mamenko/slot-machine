@@ -1,0 +1,2 @@
+# slot-machine
+Test project
