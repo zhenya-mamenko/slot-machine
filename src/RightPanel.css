@@ -1,0 +1,30 @@
+div.right-panel {
+  width: 310px;
+  height: 225px;
+  padding: 0;
+  background: #ffffff;
+  float: left;
+  margin: 5px 0 0 10px;
+}
+
+div.balance-spin {
+  width: 200px;
+  height: 60px;
+  padding: 15px;
+  background: #ffffff;
+  border: #000 3px solid;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 0.9em; 
+}
+
+div.debug-area {
+  width: 200px;
+  height: 120px;
+  padding: 15px;
+  background: #ffffff;
+  border: #000 3px solid;
+  border-radius: 6px;
+  margin: 8px 0 0 0;
+  font-size: 0.9em; 
+}
