@@ -37,32 +37,30 @@ function testPay() {
   });
 }
 
+function $(s, c) {
+  let d = c ? c : document;
+  switch (s.substr(0, 1)) {
+  case ".":
+    return d.getElementsByClassName(s.substr(1));
+  case "#":
+    return d.getElementById(s.substr(1));
+  default:
+    return d.getElementsByTagName(s);
+  }
+}
+
+function disena(el, disabled = true) {
+  disabled ? el.setAttribute("disabled", "true") : el.removeAttribute("disabled"); 
+}
+
 function changeElements(disable) {
-  let container = document.getElementsByClassName("right-panel")[0], elements;
-  elements = container.getElementsByTagName("input");
-  for (let i=0; i<elements.length; i++)
-    if (disable) {
-      elements[i].setAttribute("disabled", disable);
-    }
-    else {
-      elements[i].removeAttribute("disabled");
-    }
-  elements = container.getElementsByTagName("select");
-  for (let i=0; i<elements.length; i++)
-    if (disable) {
-      elements[i].setAttribute("disabled", disable);
-    }
-    else {
-      elements[i].removeAttribute("disabled");
-    }
-  elements = container.getElementsByTagName("button");
-  for (let i=0; i<elements.length; i++)
-    if (disable) {
-      elements[i].setAttribute("disabled", disable);
-    }
-    else {
-      elements[i].removeAttribute("disabled");
-    }
+  let container = $(".right-panel")[0], elements;
+  elements = $("input", container);
+  for (let i=0; i<elements.length; i++) disena(elements[i], disable);
+  elements = $("select", container);
+  for (let i=0; i<elements.length; i++) disena(elements[i], disable);
+  elements = $("button", container);
+  for (let i=0; i<elements.length; i++) disena(elements[i], disable);
 }
 
 const EasingFunctions = {
@@ -156,12 +154,12 @@ function startReels() {
   }
   
   let to1, to2, to3;
-  if (document.getElementById("mode-fixed").checked) {
-    to1 = document.getElementById("symbol-reel1").selectedIndex-(document.getElementById("position-reel1").selectedIndex/2);
+  if ($("#mode-fixed").checked) {
+    to1 = $("#symbol-reel1").selectedIndex-($("#position-reel1").selectedIndex/2);
     to1 = to1 < 0 ? to1 + 5 : to1;
-    to2 = document.getElementById("symbol-reel2").selectedIndex-(document.getElementById("position-reel2").selectedIndex/2);
+    to2 = $("#symbol-reel2").selectedIndex-($("#position-reel2").selectedIndex/2);
     to2 = to2 < 0 ? to2 + 5 : to2;
-    to3 = document.getElementById("symbol-reel3").selectedIndex-(document.getElementById("position-reel3").selectedIndex/2);
+    to3 = $("#symbol-reel3").selectedIndex-($("#position-reel3").selectedIndex/2);
     to3 = to3 < 0 ? to3 + 5 : to3;
   }
   else {
@@ -193,5 +191,5 @@ render((
     <SlotMachine />
   </Provider>  
 ), 
-document.getElementById("root"));
-document.getElementById("mode-random").checked = true;
+$("#root"));
+$("#mode-random").checked = true;
