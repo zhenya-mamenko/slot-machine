@@ -7,7 +7,7 @@ require("./BalanceInput.css");
 
 let BalanceInput = ({ balance, onChange }) => (
   <div className="balance-input">
-    <input type="text" value={balance} onChange={ onChange } />                                                
+    <input type="text" className="need-to-disable" value={balance} onChange={ onChange } />                                                
   </div>
 );
 

@@ -5,7 +5,7 @@ require("./SpinButton.css");
 
 const SpinButton = ({ onClick }) => (
   <div className="spin-button">
-    <button id="start-spin" onClick={ onClick }>SPIN</button>
+    <button id="start-spin" className="need-to-disable" onClick={ onClick }>SPIN</button>
   </div>
 );
 

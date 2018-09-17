@@ -7,10 +7,10 @@ require("./DebugReelComponent.css");
 const DebugReelComponent = ({label, id}) => (
   <div className="debug-reel-component">
     <label>{label}:</label>
-    <select id={"symbol-"+id}>
+    <select id={"symbol-"+id} className="need-to-disable">
       { symbolsStrings.map((v, index) => <option key={index} value={v}>{v}</option>) } 
     </select>  
-    <select id={"position-"+id}>
+    <select id={"position-"+id} className="need-to-disable">
       { redLinePositions.map((v, index) => <option key={index} value={v}>{v}</option>) }
     </select>  
   </div>

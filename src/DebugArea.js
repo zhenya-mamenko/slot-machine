@@ -7,8 +7,8 @@ const DebugArea = () => (
   <div>
     <div>
       <label className="l1">Mode:</label>
-      <input type="radio" name="mode" id="mode-random" /><label htmlFor="mode-random">random</label>
-      <input type="radio" name="mode" id="mode-fixed" /><label htmlFor="mode-fixed">fixed</label>
+      <input type="radio" className="need-to-disable" name="mode" id="mode-random" /><label htmlFor="mode-random">random</label>
+      <input type="radio" className="need-to-disable" name="mode" id="mode-fixed" /><label htmlFor="mode-fixed">fixed</label>
     </div>
 
     <div>

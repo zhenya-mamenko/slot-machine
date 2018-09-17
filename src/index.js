@@ -54,12 +54,7 @@ function disena(el, disabled = true) {
 }
 
 function changeElements(disable) {
-  let container = $(".right-panel")[0], elements;
-  elements = $("input", container);
-  for (let i=0; i<elements.length; i++) disena(elements[i], disable);
-  elements = $("select", container);
-  for (let i=0; i<elements.length; i++) disena(elements[i], disable);
-  elements = $("button", container);
+  let elements = $(".need-to-disable");
   for (let i=0; i<elements.length; i++) disena(elements[i], disable);
 }
 
